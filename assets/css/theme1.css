@@ -1,0 +1,226 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.tc {
+  text-align: center;
+}
+.tn {
+  text-decoration: none;
+}
+.pos-a {
+  position: absolute;
+}
+.pos-r {
+  position: relative;
+}
+.cb {
+  clear: both;
+}
+.oh {
+  overflow: hidden;
+}
+.cboh {
+  clear: both;
+  overflow: hidden;
+}
+.fn {
+  font-weight: normal;
+}
+.db {
+  display: block;
+}
+.di {
+  display: inline;
+}
+.dib {
+  display: inline-block;
+}
+.dn {
+  display: none;
+}
+.invisible {
+  visible: none;
+}
+.pointer {
+  cursor: pointer;
+}
+body {
+  font-size: 14px;
+  color: #000000;
+}
+a:focus,
+input[type=button],
+input[type=submit] {
+  outline: none;
+}
+.q-matrix-s-col td label,
+.q-matrix-s td label {
+  height: 40px;
+  line-height: 40px;
+}
+table {
+  width: 100%;
+  border-radius: 5px;
+}
+table tr th,
+table tr td {
+  border: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+table tr th {
+  line-height: 40px;
+}
+table tr.even {
+  background-color: #fafafa;
+}
+table .row-label {
+  padding-left: 10px;
+  width: 15%;
+}
+td .r-icon {
+  left: 50%;
+  margin-left: -12px;
+}
+.main-header {
+  height: 35px;
+  line-height: 35px;
+  background-color: #333333;
+  border-bottom: 5px solid #c64693;
+  color: #ffffff;
+}
+.main-header .btn {
+  float: right;
+}
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+label {
+  display: block;
+}
+label.hover {
+  background-color: #fbeffa;
+  cursor: pointer;
+}
+.main-content .intro {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #cccccc;
+}
+.main-content .intro h2 {
+  line-height: 30px;
+  font-weight: bold;
+}
+.main-content .intro p {
+  line-height: 1.7em;
+  padding: 5px 0 10px;
+}
+.main-content .q-list {
+  margin: 20px;
+}
+.q-item {
+  margin: 10px 0 20px;
+}
+.q-item h3 {
+  font-weight: bold;
+  line-height: 2em;
+}
+.q-item .q-description {
+  margin: 10px 20px;
+  line-height: 1.5em;
+}
+.q-radio,
+.r-select,
+.q-check,
+.q-txt-m,
+.q-txt-s,
+.q-matrix-s,
+.q-matrix-s-col {
+  margin: 0 20px;
+}
+.q-radio li,
+.r-select li,
+.q-check li,
+.q-txt-m li,
+.q-txt-s li,
+.q-matrix-s li,
+.q-matrix-s-col li {
+  line-height: 30px;
+  vertical-align: middle;
+}
+.q-radio label,
+.r-select label,
+.q-check label,
+.q-txt-m label,
+.q-txt-s label,
+.q-matrix-s label,
+.q-matrix-s-col label {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  padding-left: 35px;
+}
+.q-radio label .input-short,
+.r-select label .input-short,
+.q-check label .input-short,
+.q-txt-m label .input-short,
+.q-txt-s label .input-short,
+.q-matrix-s label .input-short,
+.q-matrix-s-col label .input-short {
+  position: absolute;
+  margin-left: 5px;
+  top: 3px;
+}
+.r-select label {
+  height: 25px;
+  line-height: 25px;
+}
+.r-select label .input-short {
+  top: 0;
+}
+.r-icon,
+.c-icon {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -12px;
+}
+.r-icon {
+  background-image: url("image/1_1.gif");
+  background-position: 3px 3px;
+}
+.c-icon {
+  background-image: url("image/2.gif");
+  background-position: 3px 3px;
+}
+.checked .r-icon {
+  background-image: url("image/1.gif");
+  background-position: 3px 2px;
+}
+.checked .c-icon {
+  background-image: url("image/2_1.gif");
+}
+.input-large {
+  width: 95%;
+}
+.r-select {
+  overflow: hidden;
+}
+.r-select select,
+.r-select .dn {
+  float: left;
+  margin-right: 15px;
+}

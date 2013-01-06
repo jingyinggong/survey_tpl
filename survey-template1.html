@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <meta name="description" content="">
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/theme1.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://cdnmaster.com/pub/iehack/html5.js"></script>
+    <![endif]-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/survey.js"></script>
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="container">
+        <a href="#" class='btn'><span>退出调研</span></a>
+        <h1>Survey测试问卷</h1>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <div class='intro'>
+          <h2>这里应该放的是调研的标题</h2>
+          <p>这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息这里应该放的是调研的辅助说明信息</p>
+        </div>
+        <div class='q-list'>
+          <div class='page-tab'>
+            <div class='q-item'>
+              <h3 class="q-title">1. 问题名称啊</h3>
+              <p class='q-description'>问题的辅助说明信息</p>
+              <ul class="q-radio">
+                <li class='checked'>
+                  <label>
+                    <span class="r-icon"><input type="radio" name='name1' /></span>
+                    第一个选项
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="r-icon"><input type="radio" name="name1" /></span>
+                    第二个选项
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="r-icon"><input type="radio" name="name1" /></span>
+                    第三个选项
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="r-icon"><input type="radio" name="name1" /></span>
+                    第四个选项
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class='q-item'>
+              <h3 class="q-title">2. 问题名称啊</h3>
+              <p class='q-description'>问题的辅助说明信息</p>
+              <ul class="q-radio">
+                <li class='checked'>
+                  <label>
+                    <span class="r-icon"><input type="radio" name='name2' /></span>
+                    第一个选项
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="r-icon"><input type="radio" name="name2" /></span>
+                    第二个选项
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="r-icon"><input type="radio" name="name2" /></span>
+                    第三个选项
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <span class="r-icon"><input type="radio" name="name2" /></span>
+                    其他：<input type="text" class='input-short' />
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class='q-item'>
+              <h3 class="q-title">3. 问题名称啊</h3>
+              <p class='q-description'>问题的辅助说明信息</p>
+              <div class='r-select'>
+                <select>
+                  <option>请选择</option>
+                  <option value="1">第1个选项</option>
+                  <option value="2">第2个选项</option>
+                  <option value="3">第3个选项</option>
+                  <option value="other">其他</option>
+                </select>
+                <div class="dn">
+                  <label>
+                    其他：<input type="text" class="input-short" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class='q-item'>
+              <h3 class="q-title">4. 问题名称啊</h3>
+              <p class='q-description'>问题的辅助说明信息</p>
+              <ul class="q-check">
+                <li>
+                  <label for="c-1">
+                    <span class="c-icon"><input type="checkbox" name='name4[]' id="c-1" /></span>
+                    第一个选项
+                  </label>
+                </li>
+                <li>
+                  <label for="c-2">
+                    <span class="c-icon"><input type="checkbox" name='name4[]' id="c-2" /></span>
+                    第二个选项
+                  </label>
+                </li>
+                <li>
+                  <label for="c-3">
+                    <span class="c-icon"><input type="checkbox" name='name4[]' id="c-3" /></span>
+                    第三个选项
+                  </label>
+                </li>
+                <li>
+                  <label for="c-4">
+                    <span class="c-icon"><input type="checkbox" name='name4[]' id="c-4" /></span>
+                    第四个选项 <input type="text" class="input-short" />
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class='q-item'>
+              <h3 class="q-title">5. 问题名称啊</h3>
+              <p class='q-description'>问题的辅助说明信息</p>
+              <div class='q-txt-m'>
+                <textarea class='input-large' rows="4"></textarea>
+              </div>
+            </div>
+            <div class='q-item'>
+              <h3 class="q-title">5. 问题名称啊</h3>
+              <p class='q-description'>问题的辅助说明信息</p>
+              <div class='q-txt-s'>
+                <input type="text" class='input-large' />
+              </div>
+            </div>
+            <div class='q-item'>
+              <h3 class="q-title">5. 问题名称啊</h3>
+              <p class='q-description'>问题的辅助说明信息</p>
+              <div class='q-matrix-s'>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th class="col-label">第一列</th>
+                      <th class="col-label">第二列</th>
+                      <th class="col-label">第三列</th>
+                      <th class="col-label">第四列</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="row-label">第1行</td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                    </tr>
+                    <tr>
+                      <td class="row-label">第2行</td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                    </tr>
+                    <tr>
+                      <td class="row-label">第3行</td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class='q-item'>
+              <h3 class="q-title">5. 为题名称</h3>
+              <p class='q-description'>矩阵单选列排他</p>
+              <div class='q-matrix-s-col'>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th class="col-label">第一列</th>
+                      <th class="col-label">第二列</th>
+                      <th class="col-label">第三列</th>
+                      <th class="col-label">第四列</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="row-label">第1行</td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m1" /></span></label></td>
+                    </tr>
+                    <tr>
+                      <td class="row-label">第2行</td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m2" /></span></label></td>
+                    </tr>
+                    <tr>
+                      <td class="row-label">第3行</td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                      <td><label><span class="r-icon"><input type="radio" name="m3" /></span></label></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer">
+      <div class="container">
+      </div>
+    </div>
+  </body>
+</html>
+

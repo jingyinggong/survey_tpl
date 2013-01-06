@@ -1,0 +1,8 @@
+*.php
+*.zip
+.DS_Store
+*.swp
+*.rar
+surveyV3.0_img/*
+SurveyMasterv2/*
+templates/*
