@@ -217,10 +217,41 @@ label.hover {
   width: 95%;
 }
 .r-select {
+  clear: both;
   overflow: hidden;
 }
 .r-select select,
 .r-select .dn {
   float: left;
   margin-right: 15px;
+}
+.btn-line {
+  margin: 30px 0;
+  text-align: center;
+}
+.btn-submit {
+  display: inline-block;
+  text-indent: -999em;
+  width: 120px;
+  height: 38px;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url('image/submit-btn.png');
+}
+.main-footer {
+  margin: 30px 0;
+}
+.main-footer .container {
+  border-top: 1px solid #cccccc;
+}
+.main-footer .logo {
+  margin: 20px 5px;
+}
+.main-footer .appendix {
+  margin: 20px 5px;
+  line-height: 20px;
 }
