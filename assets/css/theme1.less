@@ -111,7 +111,7 @@ label {
 }
 .main-content {
   .intro {
-    .m(10px 0); .p(10px 0);
+    .m(10px 0); .p(10px 0); .oh;
     border-bottom: 1px solid @c-c;
     h2 { .lh(30px); .fb; }
     p { .lh(1.7em); .p(5px 0 10px); }
@@ -178,7 +178,6 @@ label {
 }
 .btn-submit {
   .dib;
-  .ti(-999em);
   .w(120px);
   .h(38px);
   .oh;
@@ -188,6 +187,13 @@ label {
   .pointer;
   .bgc(transparent);
   .bimg('image/submit-btn.png');
+  .bgp(0 0);
+}
+.btn-submit-hover {
+  .bgp(-120px 0);
+}
+.error-tip {
+  .dn; .lh(20px); .c(#f80000);
 }
 .main-footer {
   .m(30px 0);
@@ -201,4 +207,29 @@ label {
     .m(20px 5px);
     .lh(20px);
   }
+}
+.progress {
+  .pos-r;
+  .w(270px);
+  .cboh;
+  .fr;
+  .hlh(17px);
+  .m(10px 0 20px);
+  .base-line, .bar-line {
+    .pos-a; .w(270px); .h(17px);
+  }
+  .base-l, .base-m, .base-r {
+    .h(17px); .fl;
+    .bimg('image/bar-base.gif');
+  }
+  .bar-l, .bar-m, .bar-r {
+    .h(17px); .fl;
+    .bimg('image/bar-progress.gif');
+  }
+  .base-l, .bar-l, .base-r, .bar-r { .w(10px); }
+  .base-m { .w(250px); .bgp(0 -17px); .bgr(repeat-x); }
+  .bar-m { .bgp(0 -17px); .bgr(repeat-x); .tr; .c(#406120); }
+  .bar-r { .bgp(right 0); .bgr(no-repeat); }
+  .base-r { .bgp(right 0); .bgr(no-repeat); }
+
 }

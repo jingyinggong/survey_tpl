@@ -114,6 +114,7 @@ label.hover {
 .main-content .intro {
   margin: 10px 0;
   padding: 10px 0;
+  overflow: hidden;
   border-bottom: 1px solid #cccccc;
 }
 .main-content .intro h2 {
@@ -231,7 +232,6 @@ label.hover {
 }
 .btn-submit {
   display: inline-block;
-  text-indent: -999em;
   width: 120px;
   height: 38px;
   overflow: hidden;
@@ -241,6 +241,15 @@ label.hover {
   cursor: pointer;
   background-color: transparent;
   background-image: url('image/submit-btn.png');
+  background-position: 0 0;
+}
+.btn-submit-hover {
+  background-position: -120px 0;
+}
+.error-tip {
+  display: none;
+  line-height: 20px;
+  color: #f80000;
 }
 .main-footer {
   margin: 30px 0;
@@ -254,4 +263,59 @@ label.hover {
 .main-footer .appendix {
   margin: 20px 5px;
   line-height: 20px;
+}
+.progress {
+  position: relative;
+  width: 270px;
+  clear: both;
+  overflow: hidden;
+  float: right;
+  height: 17px;
+  line-height: 17px;
+  margin: 10px 0 20px;
+}
+.progress .base-line,
+.progress .bar-line {
+  position: absolute;
+  width: 270px;
+  height: 17px;
+}
+.progress .base-l,
+.progress .base-m,
+.progress .base-r {
+  height: 17px;
+  float: left;
+  background-image: url('image/bar-base.gif');
+}
+.progress .bar-l,
+.progress .bar-m,
+.progress .bar-r {
+  height: 17px;
+  float: left;
+  background-image: url('image/bar-progress.gif');
+}
+.progress .base-l,
+.progress .bar-l,
+.progress .base-r,
+.progress .bar-r {
+  width: 10px;
+}
+.progress .base-m {
+  width: 250px;
+  background-position: 0 -17px;
+  background-repeat: repeat-x;
+}
+.progress .bar-m {
+  background-position: 0 -17px;
+  background-repeat: repeat-x;
+  text-align: right;
+  color: #406120;
+}
+.progress .bar-r {
+  background-position: right 0;
+  background-repeat: no-repeat;
+}
+.progress .base-r {
+  background-position: right 0;
+  background-repeat: no-repeat;
 }

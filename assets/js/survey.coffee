@@ -1,6 +1,14 @@
 $ ->
   $b = $ 'body'
 
+  $submit = $b.find('.btn-submit')
+
+  $submit.hover ->
+      $(@).addClass('btn-submit-hover')
+    , ->
+      $(@).removeClass('btn-submit-hover')
+
+
   $(":checkbox, :radio").css('opacity', 0)
 
   $t = $("table")
